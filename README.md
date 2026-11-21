@@ -2,6 +2,8 @@
 
 A clean, editorial-style interactive portfolio served with Streamlit.
 
+**Live:** https://portfolio-piyush-vedwal.streamlit.app/
+
 **Features:** precision-reticle cursor that morphs over links and project cards, a quiet dot-grid background that responds to the cursor, word-by-word heading reveals, magnetic buttons, animated counters, a tech marquee, and live canvas visuals for each project (audio-fingerprint constellation and an attendance dashboard).
 
 ## Run locally
