@@ -1,8 +1,8 @@
 # Piyush Kumar Vedwal — Interactive Portfolio
 
-An animated, interactive portfolio served with Streamlit.
+A clean, editorial-style interactive portfolio served with Streamlit.
 
-**Features:** boot-up sequence, techy reticle cursor with binary trail, interactive neural-network background, glitch/scramble text, draggable 3D skills sphere, live spectrogram & face-scan project visuals, a working terminal (`help`, `sudo hire piyush`, `matrix`), and a Konami-code easter egg.
+**Features:** precision-reticle cursor that morphs over links and project cards, a quiet dot-grid background that responds to the cursor, word-by-word heading reveals, magnetic buttons, animated counters, a tech marquee, and live canvas visuals for each project (audio-fingerprint constellation and an attendance dashboard).
 
 ## Run locally
 ```bash
