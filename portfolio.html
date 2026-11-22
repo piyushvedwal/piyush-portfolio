@@ -314,20 +314,22 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
       </div>
     </article>
 
-    <article class="case rv" data-cursor="view" data-href="https://drive.google.com/file/d/13AoEI0MQ890NerwzBkql2jHTir0z27br/view?usp=share_link">
-      <div class="media"><span class="chip">System design</span><canvas id="dash"></canvas></div>
+    <article class="case rv" data-cursor="view" data-href="https://sams-piyush-vedwal.streamlit.app/">
+      <div class="media"><span class="chip">Full-stack app</span><canvas id="dash"></canvas></div>
       <div class="case-body">
-        <div class="case-top"><span>03 — Attendance System</span><span>2025</span></div>
-        <h3>Attendance that can't be faked.</h3>
-        <p>A software requirements specification for an attendance platform with <b>AI-based fraud detection</b> to stop proxy attendance, offline sync, and real-time analytics. It defines secure authentication, an optimised database design and API integration for institutions.</p>
+        <div class="case-top"><span>03 — Attendance System</span><span>2026</span></div>
+        <h3>Attendance, from roll call to red flags.</h3>
+        <p>A complete attendance platform <b>built from my own software requirements specification</b>. Admins, teachers, students and parents each get their own console: marking by roster or student check-in code, calendar history, upcoming schedule, and reports exported to CSV, Excel and PDF. It alerts on low attendance and <b>unusual patterns such as possible proxy check-ins</b>, and is covered by automated tests that run on every push.</p>
         <div class="kpis">
-          <div><b>AI</b><small>proxy detection</small></div>
-          <div><b>Offline</b><small>sync on reconnect</small></div>
-          <div><b>Real-time</b><small>analytics</small></div>
+          <div><b data-count="4">0</b><small>user roles</small></div>
+          <div><b data-count="39">0</b><small>automated tests</small></div>
+          <div><b data-count="3">0</b><small>report export formats</small></div>
         </div>
-        <div class="tags"><span>SRS</span><span>AI/ML</span><span>Authentication</span><span>Databases</span><span>APIs</span></div>
+        <div class="tags"><span>Python</span><span>Streamlit</span><span>SQLite</span><span>Pandas</span><span>Altair</span><span>pytest</span><span>GitHub Actions</span></div>
         <div class="case-links">
-          <a class="btn mag" target="_blank" rel="noopener" href="https://drive.google.com/file/d/13AoEI0MQ890NerwzBkql2jHTir0z27br/view?usp=share_link">View document <span class="arr">↗</span></a>
+          <a class="btn mag" target="_blank" rel="noopener" href="https://sams-piyush-vedwal.streamlit.app/">Live demo <span class="arr">↗</span></a>
+          <a class="btn ghost mag" target="_blank" rel="noopener" href="https://github.com/piyushvedwal/SAMS-Student-Attendance-Management-System">Source <span class="arr">↗</span></a>
+          <a class="btn ghost mag" target="_blank" rel="noopener" href="https://drive.google.com/file/d/13AoEI0MQ890NerwzBkql2jHTir0z27br/view?usp=share_link">SRS document <span class="arr">↗</span></a>
         </div>
       </div>
     </article>
@@ -349,13 +351,13 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
         <div class="focus-row rv"><em>01</em><b>Algorithms &amp; Data Structures</b><small>Arrays · Hashing · Recursion</small></div>
         <div class="focus-row rv"><em>02</em><b>Signal processing &amp; data</b><small>NumPy · Pandas · Viz</small></div>
         <div class="focus-row rv"><em>03</em><b>AI / Machine Learning</b><small>GANs · Differential privacy · CNN</small></div>
-        <div class="focus-row rv"><em>04</em><b>Core CS</b><small>OOP · DBMS · SQL</small></div>
+        <div class="focus-row rv"><em>04</em><b>Core CS</b><small>OOP · DBMS · SQL · Testing</small></div>
       </div>
     </div>
   </div>
   <div class="stats rv">
     <div><b data-count="999">0</b><small>songs indexed in Mini Shazam</small></div>
-    <div><b data-count="3">0</b><small>live apps deployed</small></div>
+    <div><b data-count="4">0</b><small>live apps deployed</small></div>
     <div><b data-count="3">0</b><small>industry certifications</small></div>
     <div><b data-count="2028">0</b><small>expected graduation</small></div>
   </div>
@@ -369,7 +371,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
   <div class="skill-grid rv">
     <div class="skill-col"><h4>Languages</h4><ul><li>Python</li><li>Java</li><li>C++</li><li>SQL</li><li>HTML / CSS</li></ul></div>
     <div class="skill-col"><h4>Data &amp; ML</h4><ul><li>NumPy · Pandas · SciPy</li><li>PyTorch</li><li>scikit-learn</li><li>Differential privacy (Opacus)</li><li>Data visualisation</li><li>CNN</li></ul></div>
-    <div class="skill-col"><h4>Engineering</h4><ul><li>Git &amp; GitHub</li><li>GitHub Actions</li><li>Streamlit</li><li>Docker</li><li>MySQL</li><li>OOP</li></ul></div>
+    <div class="skill-col"><h4>Engineering</h4><ul><li>Git &amp; GitHub</li><li>GitHub Actions</li><li>Streamlit</li><li>Docker</li><li>MySQL · SQLite</li><li>pytest</li><li>OOP</li></ul></div>
     <div class="skill-col"><h4>Working style</h4><ul><li>Communication</li><li>Critical thinking</li><li>Collaboration</li><li>Problem-solving</li><li>Adaptability</li></ul></div>
   </div>
 </section>
@@ -676,7 +678,7 @@ function visible(el){ const r = el.getBoundingClientRect(); return r.bottom > 0 
       x.fillStyle = f.fraud ? '#ff6b6b' : '#5dd39e'; x.beginPath(); x.arc(fx0+16, y+18, 3.5, 0, 7); x.fill();
       x.fillStyle='#ededea'; x.font='500 12px Inter, sans-serif'; x.fillText(f.n, fx0+30, y+22);
       x.fillStyle = f.fraud ? '#ff6b6b' : '#8e8e93'; x.font='400 11px Inter, sans-serif'; x.textAlign='right';
-      x.fillText(f.fraud ? 'Proxy blocked' : 'Verified', fx0+fw-12, y+22); x.textAlign='left';
+      x.fillText(f.fraud ? 'Flagged for review' : 'Verified', fx0+fw-12, y+22); x.textAlign='left';
     });
     x.globalAlpha = 1;
   })();
