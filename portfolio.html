@@ -250,7 +250,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
   <div><span class="status rv"><i></i>Open to internships · 2026</span></div>
   <h1 class="hero-title split">Software developer building <span class="serif">fast,</span> <span class="serif">thoughtful</span> systems.</h1>
   <div class="hero-bottom">
-    <p class="rv">I'm <b>Piyush Kumar Vedwal</b>, a Computer Science undergraduate who enjoys hard problems: from writing an audio recognition engine from scratch to sharpening algorithms every day.</p>
+    <p class="rv">I'm <b>Piyush Kumar Vedwal</b>, a Computer Science undergraduate who enjoys hard problems: from writing an audio recognition engine from scratch to training differentially private generative models.</p>
     <div class="hero-cta rv">
       <a href="#work" class="btn mag">View selected work <span class="arr">↓</span></a>
       <a href="https://github.com/piyushvedwal" target="_blank" rel="noopener" class="btn ghost mag">GitHub <span class="arr">↗</span></a>
@@ -265,7 +265,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
 </section>
 
 <div class="marquee" aria-hidden="true"><div class="track" id="track">
-  <span>Python</span><span>Java</span><span>C++</span><span>NumPy</span><span>Pandas</span><span>Streamlit</span><span>MySQL</span><span>Machine Learning</span><span>CNN</span><span>GitHub Actions</span><span>Data Structures</span><span>Algorithms</span>
+  <span>Python</span><span>Java</span><span>C++</span><span>PyTorch</span><span>NumPy</span><span>Pandas</span><span>scikit-learn</span><span>Differential Privacy</span><span>Streamlit</span><span>MySQL</span><span>Machine Learning</span><span>Docker</span><span>GitHub Actions</span><span>Data Structures</span><span>Algorithms</span>
 </div></div>
 
 <!-- WORK -->
@@ -287,7 +287,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
           <div><b data-count="92" data-suf="%">0</b><small>5 s clip at 10 dB noise</small></div>
           <div><b data-count="12.8" data-dec="1" data-suf="M">0</b><small>hashes in 46.7 MB</small></div>
         </div>
-        <div class="tags"><span>Python</span><span>NumPy</span><span>Pandas</span><span>Streamlit</span><span>GitHub Actions</span><span>pytest</span></div>
+        <div class="tags"><span>Python</span><span>NumPy</span><span>SciPy</span><span>Pandas</span><span>Streamlit</span><span>GitHub Actions</span><span>pytest</span></div>
         <div class="case-links">
           <a class="btn mag" target="_blank" rel="noopener" href="https://audio-fingerprinting-uzv6d6h2pfjxyaqeciwpm2.streamlit.app/">Live demo <span class="arr">↗</span></a>
           <a class="btn ghost mag" target="_blank" rel="noopener" href="https://github.com/piyushvedwal/audio-fingerprinting">Source <span class="arr">↗</span></a>
@@ -295,10 +295,29 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
       </div>
     </article>
 
-    <article class="case flip rv" data-cursor="view" data-href="https://drive.google.com/file/d/13AoEI0MQ890NerwzBkql2jHTir0z27br/view?usp=share_link">
+    <article class="case flip rv" data-cursor="view" data-href="https://piyush-synthetic-data-generator.streamlit.app/">
+      <div class="media"><span class="chip">Privacy-preserving ML</span><canvas id="priv"></canvas></div>
+      <div class="case-body">
+        <div class="case-top"><span>02 — Synthetic Data Generator</span><span>2026</span></div>
+        <h3>Realistic data that can't leak who was in it.</h3>
+        <p>Generates synthetic tabular data with a <b>formal differential privacy guarantee</b>: a GAN whose discriminator is trained with DP-SGD through Opacus, so every synthetic row inherits the (ε, δ) budget. Privacy is then tested empirically with a <b>membership inference attack on held-out rows</b> and a distance-to-closest-record check, with fidelity and utility metrics exported as a report. Built with Ganesh Khetawat.</p>
+        <div class="kpis">
+          <div><b>DP-SGD</b><small>formal (ε, δ) guarantee</small></div>
+          <div><b>MIA</b><small>attack on held-out rows</small></div>
+          <div><b>DCR</b><small>copy &amp; leak detection</small></div>
+        </div>
+        <div class="tags"><span>Python</span><span>PyTorch</span><span>Opacus</span><span>CTGAN</span><span>scikit-learn</span><span>Streamlit</span></div>
+        <div class="case-links">
+          <a class="btn mag" target="_blank" rel="noopener" href="https://piyush-synthetic-data-generator.streamlit.app/">Live demo <span class="arr">↗</span></a>
+          <a class="btn ghost mag" target="_blank" rel="noopener" href="https://github.com/piyushvedwal/Privacy-Preserving-Synthetic-Data-Generator">Source <span class="arr">↗</span></a>
+        </div>
+      </div>
+    </article>
+
+    <article class="case rv" data-cursor="view" data-href="https://drive.google.com/file/d/13AoEI0MQ890NerwzBkql2jHTir0z27br/view?usp=share_link">
       <div class="media"><span class="chip">System design</span><canvas id="dash"></canvas></div>
       <div class="case-body">
-        <div class="case-top"><span>02 — Attendance System</span><span>2025</span></div>
+        <div class="case-top"><span>03 — Attendance System</span><span>2025</span></div>
         <h3>Attendance that can't be faked.</h3>
         <p>A software requirements specification for an attendance platform with <b>AI-based fraud detection</b> to stop proxy attendance, offline sync, and real-time analytics. It defines secure authentication, an optimised database design and API integration for institutions.</p>
         <div class="kpis">
@@ -329,14 +348,14 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
       <div class="focus">
         <div class="focus-row rv"><em>01</em><b>Algorithms &amp; Data Structures</b><small>Arrays · Hashing · Recursion</small></div>
         <div class="focus-row rv"><em>02</em><b>Signal processing &amp; data</b><small>NumPy · Pandas · Viz</small></div>
-        <div class="focus-row rv"><em>03</em><b>AI / Machine Learning</b><small>CNN · Fraud detection</small></div>
+        <div class="focus-row rv"><em>03</em><b>AI / Machine Learning</b><small>GANs · Differential privacy · CNN</small></div>
         <div class="focus-row rv"><em>04</em><b>Core CS</b><small>OOP · DBMS · SQL</small></div>
       </div>
     </div>
   </div>
   <div class="stats rv">
     <div><b data-count="999">0</b><small>songs indexed in Mini Shazam</small></div>
-    <div><b data-count="200">0</b><small>random test queries per setting</small></div>
+    <div><b data-count="3">0</b><small>live apps deployed</small></div>
     <div><b data-count="3">0</b><small>industry certifications</small></div>
     <div><b data-count="2028">0</b><small>expected graduation</small></div>
   </div>
@@ -349,8 +368,8 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
   </div>
   <div class="skill-grid rv">
     <div class="skill-col"><h4>Languages</h4><ul><li>Python</li><li>Java</li><li>C++</li><li>SQL</li><li>HTML / CSS</li></ul></div>
-    <div class="skill-col"><h4>Data &amp; ML</h4><ul><li>NumPy</li><li>Pandas</li><li>Data visualisation</li><li>CNN</li><li>AI / ML</li></ul></div>
-    <div class="skill-col"><h4>Engineering</h4><ul><li>Git &amp; GitHub</li><li>GitHub Actions</li><li>Streamlit</li><li>MySQL</li><li>OOP</li></ul></div>
+    <div class="skill-col"><h4>Data &amp; ML</h4><ul><li>NumPy · Pandas · SciPy</li><li>PyTorch</li><li>scikit-learn</li><li>Differential privacy (Opacus)</li><li>Data visualisation</li><li>CNN</li></ul></div>
+    <div class="skill-col"><h4>Engineering</h4><ul><li>Git &amp; GitHub</li><li>GitHub Actions</li><li>Streamlit</li><li>Docker</li><li>MySQL</li><li>OOP</li></ul></div>
     <div class="skill-col"><h4>Working style</h4><ul><li>Communication</li><li>Critical thinking</li><li>Collaboration</li><li>Problem-solving</li><li>Adaptability</li></ul></div>
   </div>
 </section>
@@ -575,6 +594,50 @@ function visible(el){ const r = el.getBoundingClientRect(); return r.bottom > 0 
     x.beginPath(); x.roundRect(20, h-52, tw, 32, 16); x.fill(); x.stroke();
     x.fillStyle = done ? '#5dd39e' : '#e4b363'; x.beginPath(); x.arc(36, h-36, 3.5*(done?1:(.7+.3*Math.sin(t*.15))), 0, 7); x.fill();
     x.fillStyle='#ededea'; x.fillText(label, 48, h-32);
+  })();
+})();
+
+/* Synthetic data: real records pass through a noisy DP-SGD barrier and emerge as new synthetic points */
+(() => {
+  const c = $('#priv'), x = c.getContext('2d'); let S = fit(c); addEventListener('resize', () => { S = fit(c); real = null; parts.length = 0; });
+  const gauss = () => { let u = 0, v = 0; while (!u) u = Math.random(); while (!v) v = Math.random(); return Math.sqrt(-2*Math.log(u))*Math.cos(2*Math.PI*v); };
+  let t = 0, real = null; const parts = [];
+  (function draw(){
+    requestAnimationFrame(draw); if (!visible(c)) return;
+    const {w,h} = S; t++; x.clearRect(0,0,w,h);
+    const midY = h*.48, wall = w*.5, bw = Math.max(26, w*.07);
+    if (!real) real = Array.from({length:80}, (_,i) => { const b = i%2; return {x: w*(.13+.14*b) + gauss()*w*.04, y: midY + (b?-1:1)*h*.1 + gauss()*h*.06}; });
+    // column labels
+    x.font = '500 11px Inter, sans-serif'; x.fillStyle = '#8e8e93';
+    x.fillText('REAL RECORDS', 24, h*.17); x.textAlign = 'right'; x.fillText('SYNTHETIC', w-24, h*.17); x.textAlign = 'left';
+    // real records
+    real.forEach(p => { x.fillStyle = 'rgba(237,237,234,.4)'; x.beginPath(); x.arc(p.x, p.y, 1.8, 0, 7); x.fill(); });
+    // privacy barrier: clipped gradients + gaussian noise
+    x.fillStyle = 'rgba(228,179,99,.04)'; x.fillRect(wall-bw/2, h*.22, bw, h*.56);
+    for (let i = 0; i < 50; i++){ x.fillStyle = `rgba(228,179,99,${.06+Math.random()*.16})`; x.fillRect(wall-bw/2+Math.random()*bw, h*.22+Math.random()*h*.56, 1.5, 1.5); }
+    x.strokeStyle = 'rgba(228,179,99,.25)'; x.setLineDash([3,4]); x.strokeRect(wall-bw/2+.5, h*.22, bw, h*.56); x.setLineDash([]);
+    x.fillStyle = '#e4b363'; x.font = '500 11px JetBrains Mono, monospace'; x.textAlign = 'center'; x.fillText('DP-SGD', wall, h*.22-10); x.textAlign = 'left';
+    // particles: travel to the barrier, get noised, settle as fresh synthetic points
+    if (t%5 === 0){
+      const src = real[Math.random()*real.length|0], b = Math.random() < .5;
+      parts.push({x:src.x, y:src.y, tx: w*(.73+.14*(b?1:0)) + gauss()*w*.045, ty: midY + (b?-1:1)*h*.1 + gauss()*h*.07, ph:0, life:0});
+    }
+    for (let i = parts.length-1; i >= 0; i--){
+      const p = parts[i];
+      if (p.ph === 0){ p.x += (wall-p.x)*.045; p.y += (midY-p.y)*.012; if (Math.abs(p.x-wall) < 4) p.ph = 1; }
+      else if (p.ph === 1){ p.x += (p.tx-p.x)*.05 + gauss()*.7; p.y += (p.ty-p.y)*.05 + gauss()*.7; if (Math.hypot(p.tx-p.x, p.ty-p.y) < 1.5) p.ph = 2; }
+      else if (++p.life > 420) { parts.splice(i,1); continue; }
+      x.fillStyle = p.ph === 0 ? 'rgba(237,237,234,.65)' : `rgba(228,179,99,${p.ph === 2 ? Math.min(.85, 1 - p.life/480) : .7})`;
+      x.beginPath(); x.arc(p.x, p.y, p.ph === 2 ? 2.2 : 1.6, 0, 7); x.fill();
+    }
+    // status pill
+    const phase = (t % 480) > 260;
+    const label = phase ? 'Guarantee · ε = 1.0, δ = 1e-5' : 'Training with clipped, noised gradients…';
+    x.font = '500 12px Inter, sans-serif'; const tw = x.measureText(label).width + 34;
+    x.fillStyle = 'rgba(11,11,12,.85)'; x.strokeStyle = 'rgba(255,255,255,.1)';
+    x.beginPath(); x.roundRect(20, h-52, tw, 32, 16); x.fill(); x.stroke();
+    x.fillStyle = phase ? '#5dd39e' : '#e4b363'; x.beginPath(); x.arc(36, h-36, 3.5*(phase ? 1 : (.7+.3*Math.sin(t*.15))), 0, 7); x.fill();
+    x.fillStyle = '#ededea'; x.fillText(label, 48, h-32);
   })();
 })();
 
